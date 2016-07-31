@@ -1,0 +1,9 @@
+<h1><%= @namae %> result is</h1>
+<h1>the meaning of your name is</h1>
+<h3><%= @namae %>
+    <% @resultlist.sample(1).each do |result| %>
+      <%= result %>
+    <%end%>
+
+  </h3><br>
+<a href="/"><h1>다시하기</h1></a>
