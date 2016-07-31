@@ -11,4 +11,10 @@ class HomeController < ApplicationController
       @namaeresult = @namae.split(//)
       @resultlist = ["kimchi", "sashimi", "pikachu", "raichu", "fire", "thunder", "legend"]
     end
+    def result3
+      alpha = ["a","b","c","d","e","f"]
+      data = [["kimchi"],["sashimi"],["pikachu"],["raichu"],["thunder"], ["james"]]
+      @array = params[:namea3].strip.split(//)
+      @ret = @array.map{ |a| data[alpha.index(a).to_i] }
+    end
 end
